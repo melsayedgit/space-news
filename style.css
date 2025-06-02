@@ -11,15 +11,36 @@
   --para-screen: 1;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
-  font-family: 'antonio', sans-serif;
-  background-color: wheat;
+
+  font-family: "Arial", sans-serif;
+  background: linear-gradient(135deg,
+      #1e1b4b 0%,
+      #7c3aed 25%,
+      #c2410c 75%,
+      #ea580c 100%);
+  color: white;
+  overflow-x: hidden;
+  min-height: 100vh;
 
 }
 
+.body {
+  background: linear-gradient(135deg,
+      #ea580c 0%,
+      #c2410c 25%,
+      #7c3aed 75%,
+      #1e1b4b 100%);
+}
 
 
 .parallax-container {
@@ -68,7 +89,7 @@ body {
   margin-top: 20vh;
   width: 40%;
   color: white;
-
+  font-family: 'antonio', sans-serif;
   text-align: center;
   font-size: 3vw;
 }
@@ -183,7 +204,9 @@ body {
   font-size: 50px;
 }
 
-.CTA {}
+.CTA {
+  z-index: 10000;
+}
 
 
 
