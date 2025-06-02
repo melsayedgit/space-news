@@ -3,6 +3,6 @@ window.addEventListener("scroll", function () {
   const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
   layers.forEach((layer) => {
     const depth = layer.getAttribute("data-depth") || 0;
-    layer.style.transform = `translateY(${scrollTop * depth}px)`;
+    layer.style.transform = `translateY(${scrollTop * depth * 0.4}px)`;
   });
 });

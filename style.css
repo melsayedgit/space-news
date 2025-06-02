@@ -1,3 +1,9 @@
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
 .parallax-container {
   position: relative;
   overflow: hidden;
@@ -13,15 +19,51 @@
   transform: translateY(0);
   transition: transform 0.1s ease-out;
   will-change: transform;
+  pointer-events: none
+}
+
+
+.parallax-layer img {
+  width: 100%;
+
 }
 
 .bg {
   z-index: -1;
+
+  position: absolute;
+
+}
+
+.bg img {
+  width: 100%;
+  height: 85%;
+
+}
+
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000;
+  scale: 1;
 }
 
 .stars {
   z-index: 2;
   mix-blend-mode: screen;
+  position: absolute;
+
+
+}
+
+.wind {
+  z-index: 2;
+  mix-blend-mode: lighten;
+  position: absolute;
+
+
 }
 
 .box {
@@ -31,47 +73,69 @@
 .planet-1 {
   z-index: 5;
   mix-blend-mode: exclusion;
-  position: relative;
-  left: 60%;
+  position: absolute;
+  left: 32%;
+  top: -40%;
+  scale: 0.3;
 }
 
 .planet-2 {
   z-index: 4;
-  mix-blend-mode: exclusion;
-  position: relative;
-  left: 60%;
+  mix-blend-mode: screen;
+  position: absolute;
+  left: -38%;
+  top: -40%;
+  scale: 0.15;
 }
 
 .planet-3 {
   z-index: 3;
+  scale: 0.3;
+
+  position: absolute;
+  left: -20%;
+  top: -15%;
+  scale: 0.07;
+
 }
 
-.planet-4 {
-  z-index: 2;
-}
+
 
 .ship {
-  z-index: 1;
+  z-index: 50;
+  top: -40%;
+  scale: 0.2;
+
+  mix-blend-mode: lighten;
 }
 
 .stone-1 {
-  z-index: 1;
+  z-index: 100;
   position: absolute;
-  top: 25%;
+
+  top: 49%;
+
 }
 
 .stone-2 {
-  z-index: 1;
+  z-index: 200;
   position: absolute;
-  top: 50%;
-  left: 25%;
+  top: 80%;
 }
 
 .shadow {
   z-index: 1;
+  mix-blend-mode: screen;
+  top: 50%;
+
 }
 
 .dust {
   z-index: 0;
   mix-blend-mode: screen;
+
+}
+
+.test {
+  font-size: 50px;
 }
