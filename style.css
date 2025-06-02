@@ -1,14 +1,36 @@
+@font-face {
+  font-family: 'antonio';
+  src: url('/assets/fonts/Antonio-Thin.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --stone-top: 49%;
+  --stone-2-top: 80%;
+  --para-screen: 1;
+}
+
 body {
   display: flex;
   flex-direction: column;
   margin: 0;
+  font-family: 'antonio', sans-serif;
+  background-color: wheat;
+
 }
+
+
 
 .parallax-container {
   position: relative;
   overflow: hidden;
   height: 100vh;
+
+
 }
+
+
 
 .parallax-layer {
   position: absolute;
@@ -43,11 +65,12 @@ body {
 
 
 .logo {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  z-index: 1000;
-  scale: 1;
+  margin-top: 20vh;
+  width: 40%;
+  color: white;
+
+  text-align: center;
+  font-size: 3vw;
 }
 
 .stars {
@@ -67,7 +90,27 @@ body {
 }
 
 .box {
-  z-index: 10;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(25, 25, 255, 0.262);
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  box-shadow: 0px 10px 69px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10%;
+}
+
+
+
+.hero-box {
+  z-index: 1000;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  height: 85%;
+  width: 80%;
+  border-radius: 20px;
 }
 
 .planet-1 {
@@ -113,14 +156,14 @@ body {
   z-index: 100;
   position: absolute;
 
-  top: 49%;
+  top: var(--stone-top);
 
 }
 
 .stone-2 {
   z-index: 200;
   position: absolute;
-  top: 80%;
+  top: var(--stone-2-top);
 }
 
 .shadow {
@@ -138,4 +181,50 @@ body {
 
 .test {
   font-size: 50px;
+}
+
+.CTA {}
+
+
+
+@media screen and (max-width: 2000px) {
+  :root {
+    --stone-top: 55%;
+    --para-screen: 2;
+
+  }
+}
+
+@media screen and (max-width: 1500px) {
+  :root {
+    --stone-top: 65%;
+    --para-screen: 3;
+
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  :root {
+    --stone-top: 70%;
+    --stone-2-top: 85%;
+    --para-screen: 4;
+
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :root {
+    --stone-top: 75%;
+    --para-screen: 5;
+
+  }
+}
+
+@media screen and (max-width:720px) {
+  :root {
+    --stone-top: 85%;
+    --stone-2-top: 90%;
+    --para-screen: 6;
+
+  }
 }
