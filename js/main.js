@@ -1,13 +1,13 @@
 // Create animated stars
 function createStars() {
-  const cosmicBg = document.querySelector(".cosmic-bg");
+  const cosmicElements = document.querySelector(".cosmic-elements");
   for (let i = 0; i < 50; i++) {
     const star = document.createElement("div");
     star.className = "stars";
     star.style.left = Math.random() * 100 + "%";
     star.style.top = Math.random() * 100 + "%";
     star.style.animationDelay = Math.random() * 3 + "s";
-    cosmicBg.appendChild(star);
+    cosmicElements.appendChild(star);
   }
 }
 

@@ -22,7 +22,7 @@ body {
   flex-direction: column;
   margin: 0;
 
-  font-family: "Arial", sans-serif;
+  font-family: "antonio", sans-serif;
   background: linear-gradient(135deg,
       #1e1b4b 0%,
       #7c3aed 25%,
@@ -35,6 +35,7 @@ body {
 }
 
 .body {
+  position: relative;
   background: linear-gradient(135deg,
       #ea580c 0%,
       #c2410c 25%,
@@ -69,7 +70,7 @@ body {
   display: flex;
   justify-content: center;
   background-color: rgba(25, 25, 255, 0.262);
-  font-family: "Antonio", sans-serif;
+  font-family: "antonio", sans-serif;
   font-optical-sizing: auto;
   font-weight: 100;
   font-style: normal;
@@ -199,14 +200,20 @@ body {
 }
 
 /* Animated background elements */
-.cosmic-bg {
-  position: fixed;
+.main-content {
+  position: relative;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.cosmic-elements {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
-  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .planet {
