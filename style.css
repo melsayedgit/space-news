@@ -65,27 +65,45 @@ body {
   pointer-events: none
 }
 
+.hero-box {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(25, 25, 255, 0.262);
+  font-family: "Antonio", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+  box-shadow: 0px 10px 69px 14px rgba(0, 0, 0, 0.1);
+  border-radius: 10%;
+  z-index: 1000;
+  position: absolute;
+  top: 5%;
+  left: 10%;
+  height: 85%;
+  width: 80%;
+  border-radius: 20px;
+}
 
 .parallax-layer img {
   width: 100%;
 
 }
 
-.bg {
+.para-bg {
   z-index: -1;
 
   position: absolute;
 
 }
 
-.bg img {
+.para-bg img {
   width: 100%;
   height: 85%;
 
 }
 
 
-.logo {
+.para-logo {
   margin-top: 20vh;
   width: 40%;
   color: white;
@@ -102,7 +120,7 @@ body {
 
 }
 
-.wind {
+.para-wind {
   z-index: 2;
   mix-blend-mode: lighten;
   position: absolute;
@@ -110,31 +128,12 @@ body {
 
 }
 
-.box {
-  display: flex;
-  justify-content: center;
-  background-color: rgba(25, 25, 255, 0.262);
-  font-family: "Antonio", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 100;
-  font-style: normal;
-  box-shadow: 0px 10px 69px 14px rgba(0, 0, 0, 0.1);
-  border-radius: 10%;
-}
 
 
 
-.hero-box {
-  z-index: 1000;
-  position: absolute;
-  top: 5%;
-  left: 10%;
-  height: 85%;
-  width: 80%;
-  border-radius: 20px;
-}
 
-.planet-1 {
+
+.para-planet-1 {
   z-index: 5;
   mix-blend-mode: exclusion;
   position: absolute;
@@ -143,7 +142,7 @@ body {
   scale: 0.3;
 }
 
-.planet-2 {
+.para-planet-2 {
   z-index: 4;
   mix-blend-mode: screen;
   position: absolute;
@@ -152,55 +151,46 @@ body {
   scale: 0.15;
 }
 
-.planet-3 {
+.para-planet-3 {
   z-index: 3;
   scale: 0.3;
-
   position: absolute;
   left: -20%;
   top: -15%;
   scale: 0.07;
-
 }
 
-
-
-.ship {
+.para-ship {
   z-index: 50;
   top: -40%;
   scale: 0.2;
-
   mix-blend-mode: lighten;
 }
 
-.stone-1 {
+.para-stone-1 {
   z-index: 100;
   position: absolute;
-
   top: var(--stone-top);
-
 }
 
-.stone-2 {
+.para-stone-2 {
   z-index: 200;
   position: absolute;
   top: var(--stone-2-top);
 }
 
-.shadow {
+.para-shadow {
   z-index: 1;
   mix-blend-mode: screen;
   top: 50%;
-
 }
 
-.dust {
+.para-dust {
   z-index: 0;
   mix-blend-mode: screen;
-
 }
 
-.test {
+.para-test {
   font-size: 50px;
 }
 
