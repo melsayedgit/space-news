@@ -42,5 +42,6 @@
 | Name          | Link                              | Description            |
 |---------------|-----------------------------------|------------------------|
 | Static Link   | [Link](https://melsayedgit.github.io/space-news)  | A static website link using github Actions |
-| WordPress     | [link](https://yourwordpresssite.com) | WordPress site link    |
+| WordPress     | [link](https://yourwordpresssite.com) |in progress  |
+| Webflow  | [link](https://yourwordpresssite.com) | not yet  |
 ---
