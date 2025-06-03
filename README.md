@@ -41,6 +41,6 @@
 
 | Name          | Link                              | Description            |
 |---------------|-----------------------------------|------------------------|
-| Static Link   | [link]([https://example.com](https://melsayedgit.github.io/space-new))  | A static website link  |
+| Static Link   | [link](https://example.com](https://melsayedgit.github.io/space-new))  | A static website link  |
 | WordPress     | [link](https://yourwordpresssite.com) | WordPress site link    |
 ---
