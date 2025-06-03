@@ -37,4 +37,10 @@
 - The project currently lacks advanced interactivity like emailing features and a robust CMS.
 - UI refinements were limited by time constraints.
 
+# Project Links
+
+| Name          | Link                              | Description            |
+|---------------|-----------------------------------|------------------------|
+| Static Link   | [Link](https://melsayedgit.github.io/space-news)  | A static website link using github Actions |
+| WordPress     | [link](https://yourwordpresssite.com) | WordPress site link    |
 ---
