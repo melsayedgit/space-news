@@ -113,6 +113,9 @@ class FormValidator {
     this.emailField.addEventListener("blur", () => this.validateEmail());
     this.nameField.addEventListener("input", () => this.clearError("name"));
     this.emailField.addEventListener("input", () => this.clearError("email"));
+    if (localStorage.getItem("newsletterSubscribed") === "true") {
+      this.setNewsletterSubscribed();
+    }
   }
 
   validateName() {
@@ -127,7 +130,13 @@ class FormValidator {
     this.clearError("name");
     return true;
   }
-
+  setNewsletterSubscribed() {
+    // Success animation
+    const submitBtn = this.form.querySelector(".submit-btn");
+    const originalText = submitBtn.textContent;
+    submitBtn.textContent = "Welcome to the Universe! 🚀";
+    submitBtn.style.background = "linear-gradient(45deg, #10b981, #059669)";
+  }
   validateEmail() {
     const email = this.emailField.value.trim();
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -168,17 +177,8 @@ class FormValidator {
     const isEmailValid = this.validateEmail();
 
     if (isNameValid && isEmailValid) {
-      // Success animation
-      const submitBtn = this.form.querySelector(".submit-btn");
-      const originalText = submitBtn.textContent;
-      submitBtn.textContent = "Welcome to the Universe! 🚀";
-      submitBtn.style.background = "linear-gradient(45deg, #10b981, #059669)";
-
-      setTimeout(() => {
-        submitBtn.textContent = originalText;
-        submitBtn.style.background = "linear-gradient(45deg, #7c3aed, #c2410c)";
-        this.form.reset();
-      }, 3000);
+      localStorage.setItem("newsletterSubscribed", "true");
+      this.setNewsletterSubscribed();
     }
   }
 }
