@@ -1,7 +1,7 @@
 ![logo](https://github.com/user-attachments/assets/5c16b60a-fada-413a-8d76-02c8ef1864ac)
 
 
-**Space News** is a dummy website concept designed to deliver messages across the galaxy—without the need for any electronic communication tools. The idea is a playful take on intergalactic news delivery, providing a fun and imaginative platform for sending physical information media  beyond Earth.
+**Space News** is a dummy website concept designed to deliver messages across the galaxy without the need for any electronic communication tools. The idea is a playful take on intergalactic news delivery, providing a fun and imaginative platform for sending physical information media  beyond Earth.
 
 ## Tools Used
 
