@@ -1,13 +1,13 @@
 @font-face {
   font-family: 'antonio';
-  src: url('/assets/fonts/Antonio-Thin.ttf') format('truetype');
+  src: url('./assets/fonts/Antonio-Thin.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'antonio';
-  src: url('/assets/fonts/Antonio-Bold.ttf') format('truetype');
+  src: url('./assets/fonts/Antonio-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: bold;
 }
