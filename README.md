@@ -41,6 +41,6 @@
 
 | Name          | Link                              | Description            |
 |---------------|-----------------------------------|------------------------|
-| Static Link   | [Link](https://melsayedgit.github.io/space-new)  | A static website link using github Actions |
+| Static Link   | [Link](https://melsayedgit.github.io/space-news)  | A static website link using github Actions |
 | WordPress     | [link](https://yourwordpresssite.com) | WordPress site link    |
 ---
