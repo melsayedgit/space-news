@@ -218,7 +218,7 @@ body {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
-  font-family: "antonio", sans-serif;
+  font-family: 'antonio', sans-serif;
   font-weight: bold;
   font-size: 2rem;
   color: white;
@@ -365,7 +365,7 @@ header {
   font-size: 2.5rem;
   margin-bottom: 3rem;
   text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-  font-family: "antonio", sans-serif;
+  font-family: 'antonio', sans-serif;
   font-weight: bold;
 }
 
