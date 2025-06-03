@@ -70,7 +70,7 @@ body {
   transform: translateY(0);
   transition: transform 0.1s ease-out;
   will-change: transform;
-  pointer-events: none
+
 }
 
 .hero-box {
@@ -118,6 +118,11 @@ body {
   font-family: 'antonio', sans-serif;
   text-align: center;
   font-size: 3vw;
+}
+
+.para-logo p {
+  margin-top: 30px;
+
 }
 
 .stars {
@@ -203,7 +208,44 @@ body {
 }
 
 .CTA {
-  z-index: 10000;
+  margin-top: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 30px;
+  padding: 0.3rem 1.5rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  font-family: "antonio", sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.CTA::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg,
+      transparent,
+      rgba(255, 255, 255, 0.1),
+      transparent);
+  transition: left 0.5s;
+}
+
+.CTA:hover::before {
+  left: 100%;
+}
+
+.CTA:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(124, 58, 237, 0.3);
 }
 
 /* Animated background elements */
