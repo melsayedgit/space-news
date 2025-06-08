@@ -112,16 +112,18 @@ body {
 
 
 .para-logo {
-  margin-top: 20vh;
-  width: 40%;
+  margin: auto;
+  padding: 0 20px;
+
   color: white;
   font-family: 'antonio', sans-serif;
   text-align: center;
-  font-size: 3vw;
+
 }
 
 .para-logo p {
   margin-top: 30px;
+  font-size: 3rem;
 
 }
 
@@ -195,7 +197,8 @@ body {
 .para-shadow {
   z-index: 1;
   mix-blend-mode: screen;
-  top: 50%;
+  top: calc(var(--stone-top) * 5 +50%);
+  ;
 }
 
 .para-dust {
