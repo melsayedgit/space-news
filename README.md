@@ -42,6 +42,6 @@
 | Name          | Link                              | Description            |
 |---------------|-----------------------------------|------------------------|
 | Static Link   | [Link](https://melsayedgit.github.io/space-news)  | A static website link using github Actions |
-| WordPress     | [link](https://yourwordpresssite.com) |in progress  |
-| Webflow  | [link](https://yourwordpresssite.com) | not yet  |
+| WordPress     | [Link](https://github.com/melsayedgit/space-news/blob/master/space-news.zip) |wp port with acf for testimonial CM |
+| Webflow  |none | Porting is not doable, you can't import or export HTML, CSS, or JS files without a subscription
 ---
